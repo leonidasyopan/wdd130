@@ -14,9 +14,9 @@
 }
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -64,8 +64,6 @@ h1 {
 aside {
     max-width: 30rem;
     position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
 }
 
 aside img {
@@ -76,17 +74,15 @@ aside img {
 
 aside h2 {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 3rem;
-    color: var(--main-color);
+    top: 70px;
+    left: 165px;
 }
 
 main img {
     width: 19rem;
     height: auto;
+    margin: 1rem 0 1rem 1rem;
     float: right;
-    margin: 1rem 0 1rem 1rem
 }
 
 p {
@@ -106,17 +102,11 @@ ul {
 }
 
 /* Class Selectors */
-.box {
-    border: 1px solid var(--box-border);
-    padding: 1rem;
-    background-color: var(--box-bg);
-    color: var(--box-text);
-}
 
-.grid {
-    display: grid;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #0a66c2;
+    color: var(--accent-color);
+    background-color: var(--accent-color);
 }
