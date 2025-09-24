@@ -94,8 +94,11 @@ header, .grid, footer {
 
 footer {
     background-color: var(--footer-bg);
-    color: var(--footer-text);
     padding: 2rem 1rem;
+}
+
+footer p {
+    color: #fff;
 }
 
 ul {
