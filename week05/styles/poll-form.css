@@ -40,11 +40,28 @@ header, footer {
 
 form {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 600px;
   background-color: var(--primary-background);
   padding: 20px 40px;
   border-radius: 5px;
   border: 1px solid var(--gray-with-opacity);
+}
+
+.form-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.column1 {
+  grid-template-columns: 3fr 1fr;
+  margin: 0.5rem 0;
+}
+
+.column2 {
+  grid-template-columns: 1fr 2fr;
+  margin: 0.5rem 0;
 }
 
 fieldset {
@@ -73,6 +90,10 @@ input, select, textarea {
   border-radius: 5px;
   border: 1px solid var(--gray-with-opacity);
   font-size: 1.1rem;
+}
+
+.textarea-label {
+  margin: 1rem 0 0 0;
 }
 
 input[type="checkbox"] {
