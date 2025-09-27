@@ -1,20 +1,107 @@
+:root {
+--primary-color: #1f1f1f;
+--secondary-color: #ffffff;
+--primary-background: #eceef1;
+--secondary-background: #607d8b;
+--dark-background: #2b383d;
+--gray-with-opacity: rgba(78, 78, 78, 0.3);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
-  max-width: 800px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 1rem auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 1.2rem;
-  background-color: #fff;
-  color: #1f1f1f;
+  background-color: var(--secondary-background);
+  color: var(--primary-color);
+}
+
+main {
+  flex: 1;
 }
 
 header, footer {
   padding: 20px 0;
   text-align: center;
   text-shadow: 1px 1px 3px #777;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: var(--primary-background);
+  padding: 20px 40px;
+  border-radius: 5px;
+  border: 1px solid var(--gray-with-opacity);
+}
+
+fieldset {
+  border: 1px solid var(--gray-with-opacity);
+  display: grid;
+  gap: 5px;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+fieldset legend {
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+label {
+  margin-bottom: 5px;
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--gray-with-opacity);
+  font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+  justify-self: end;
+  margin-right: 0.5rem;
+}
+
+button {
+  background-color: var(--secondary-background);
+  color: var(--secondary-color);
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--dark-background);
+  color: var(--secondary-color);
 }
