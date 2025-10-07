@@ -1,0 +1,231 @@
+/* CSS Variables */
+:root {
+  --primary-color: #1a5490; /* deep blue */
+  --secondary-color: #4a90d9; /* bright blue */
+  --accent1-color: #2c3e50; /* dark slate */
+  --accent2-color: #f39c12; /* golden orange */
+  --heading-font: "Georgia", "Times New Roman", serif;
+  --body-font: "Helvetica", Arial, sans-serif;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+/* Page Layout - Center Content */
+header, main, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* Header Grid Layout */
+header {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  gap: 20px;
+}
+
+header img {
+  width: 120px;
+  height: auto;
+}
+
+/* Heading Styles */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+/* Navigation Flexbox Layout */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--accent1-color);
+  background-color: #fff;
+  border: 1px solid var(--accent1-color);
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--accent2-color);
+  color: #fff;
+}
+
+/* Spacing for Common Elements */
+p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* Footer Styles */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Social Media Links */
+.socialmedia {
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.socialmedia a {
+  text-decoration: none;
+  display: block;
+}
+
+.socialmedia img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.socialmedia img:hover {
+  transform: scale(1.2);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 16px;
+  border-radius: 4px;
+}
+
+/* History Section Layout */
+.history {
+  margin: 40px 16px;
+}
+
+.history h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.history-content p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.history-content img {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Adventures Section Layout */
+.adventures {
+  margin: 40px 16px;
+}
+
+.adventures h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.adventure-gallery figure {
+  flex: 1;
+  margin: 0;
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.adventure-gallery figcaption {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: var(--primary-color);
+  font-weight: bold;
+}
