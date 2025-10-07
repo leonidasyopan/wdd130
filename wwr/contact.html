@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | Wild Water Rafting</title>
+    <meta name="description"
+        content="Get in touch with Wild Water Rafting. Contact us for reservations, inquiries, or questions about our exciting river adventures.">
+    <meta name="author" content="Leonidas Yopan">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Wild Water Rafting logo" width="120" height="120">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h1>White Water Rafting Company</h1>
+            <div class="company-details">
+                <address>
+                    123 Main River Street<br>
+                    Kolob, California<br>
+                    Phone: +1 999 999 9999<br>
+                    Email: <a href="mailto:info@whitewater.com">info@whitewater.com</a>
+                </address>
+            </div>
+        </section>
+
+        <section class="contact-layout">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0977198524754!2d-122.41941548468208!3d37.77492977975903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sTwitter%20HQ!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                    width="400" height="300" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Wild Water Rafting Location">
+                </iframe>
+            </div>
+
+            <div class="contact-form-container">
+                <form class="contact-form" method="get" action="thank-you.html">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Message Purpose</legend>
+                        <label>
+                            <input type="radio" name="purpose" value="general" checked>
+                            General Inquiry
+                        </label>
+                        <label>
+                            <input type="radio" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+                        <label>
+                            <input type="radio" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Your Message</legend>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <label>
+                            <input type="checkbox" name="newsletter" value="yes">
+                            Please subscribe me to the monthly newsletter
+                        </label>
+                    </fieldset>
+
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-profiles">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Sarah Johnson, River Guide">
+                    <figcaption>Sarah Johnson<br><span>Lead River Guide</span></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Mike Chen, Safety Director">
+                    <figcaption>Mike Chen<br><span>Safety Director</span></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Emma Rodriguez, Operations Manager">
+                    <figcaption>Emma Rodriguez<br><span>Operations Manager</span></figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Wild Water Rafting | Leonidas Yopan</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" aria-label="Facebook">
+                <img src="images/facebook.svg" alt="Facebook Icon" width="24" height="24">
+            </a>
+            <a href="https://linkedin.com" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn Icon" width="24" height="24">
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram">
+                <img src="images/instagram.svg" alt="Instagram Icon" width="24" height="24">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
