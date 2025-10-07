@@ -124,6 +124,7 @@ footer p {
 /* Hero Section */
 .hero {
   position: relative;
+  margin-bottom: 60px;
 }
 
 .hero img {
@@ -145,12 +146,13 @@ footer p {
 
 .hero article {
   position: absolute;
-  bottom: 20px;
+  bottom: -50px;
   left: 20px;
   right: 20px;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 16px;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hero article img {
@@ -158,6 +160,12 @@ footer p {
   width: 125px;
   margin-left: 16px;
   border-radius: 4px;
+}
+
+.hero article::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* History Section Layout */
